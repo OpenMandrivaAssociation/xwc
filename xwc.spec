@@ -1,7 +1,7 @@
 %define name xwc
 %define version 0.91.4patch1
 %define prefix %{_prefix}
-%define release 18mdk
+%define release %mkrel 18
 
 Name: %{name}
 Summary: A filemanager for X
