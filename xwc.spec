@@ -9,7 +9,7 @@ Version: %{version}
 Release: %{release}
 License: GPL
 Group: File tools
-BuildRequires: XFree86-devel
+BuildRequires: X11-devel
 Source0: http://study.haifa.ac.il/~mbaranov/%{name}-%{version}.tar.bz2
 Source1: http://study.haifa.ac.il/~mbaranov/fox-0.99.42.tar.bz2 
 Source10: %{name}.16.png
