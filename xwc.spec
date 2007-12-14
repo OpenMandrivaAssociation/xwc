@@ -24,7 +24,7 @@ BuildRoot: %{_tmppath}/%{name}-buildroot
 
 %description
 X file manager for X11 written using the FOX toolkit.
-(http://cyberia.cfdrc.com/FOX/fox.html) It has Windows Commander or MS-Explorer
+It has Windows Commander or MS-Explorer
 look and it's very fast and simple. The main features are: file associations,
 mount/umount devices, directory tree for quick cd, change file attributes, auto
 save registry, compressed archives view/creation/extraction, automatic
