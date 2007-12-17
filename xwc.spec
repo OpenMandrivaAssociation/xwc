@@ -20,7 +20,6 @@ Patch1:	fox-0.99.42.patch2.bz2
 Patch2:	fox-0.99.42.patch3.bz2
 Patch3: xwc-compile.patch.bz2
 Patch4: xwc-better-desktop.patch.bz2 
-BuildRoot: %{_tmppath}/%{name}-buildroot
 
 %description
 X file manager for X11 written using the FOX toolkit.
