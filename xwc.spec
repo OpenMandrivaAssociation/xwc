@@ -77,14 +77,14 @@ install %{SOURCE10}  $RPM_BUILD_ROOT/%{_miconsdir}/%{name}.png
 install %{SOURCE11}  $RPM_BUILD_ROOT/%{_iconsdir}/%{name}.png
 install %{SOURCE12}  $RPM_BUILD_ROOT/%{_liconsdir}/%{name}.png 
 
-cat > $RPM_BUILD_ROOT/%{_menudir}/%{name} << EOF
-?package(%{name}):\
-command="%{name}"\
-title="XWC File Manger"\
-longtitle="A MS-Explorer-like File Manager for X"\
-needs="x11"\
-icon="%{name}.png"\
-section="System/File Tools"
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{name}
+Name=XWC File Manger
+Comment=A MS-Explorer-like File Manager for X
+Icon=%{name}
+Categories=X-MandrivaLinux-System-FileTools;System;
 EOF
 
 #rm dub README
@@ -103,7 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc AUTHORS COPYING README
 %{_bindir}/*
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_libdir}/foxicons
 %{_libdir}/foxrc
 %{_iconsdir}/%{name}.png
