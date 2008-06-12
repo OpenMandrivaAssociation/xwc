@@ -90,11 +90,15 @@ EOF
 #rm dub README
 rm -rfd $RPM_BUILD_ROOT/usr/doc/xwc-0.91.4patch1
  
+%if %mdkversion < 200900
 %post
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun
 %{clean_menus}
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
